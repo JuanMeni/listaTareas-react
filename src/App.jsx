@@ -3,6 +3,9 @@ import Subtitulo from './components/Subtitulo';
 import Titulo from './components/Titulo';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Formulario from './components/Formulario';
+// si quiero utilizar una hoja de estilo uso:
+// import './Formulario.css'
+// propia para cada uno de los componentes
 
 const App = () => {
     return (
