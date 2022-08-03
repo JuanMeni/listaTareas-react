@@ -1,12 +1,14 @@
 import React from "react";
-import {ListGroup} from 'react-bootstrap';
+import { ListGroup } from "react-bootstrap";
 import ItemTarea from "./ItemTarea";
 
-const ListaTareas = () => {
+const ListaTareas = (props) => {
   return (
     <div>
       <ListGroup>
-        <ItemTarea></ItemTarea>
+        {props.arregloTareas.map((item, posicion) => (
+          <ItemTarea key={posicion} tareaCargada={item}></ItemTarea>
+        ))}
       </ListGroup>
     </div>
   );

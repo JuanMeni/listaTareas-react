@@ -34,7 +34,7 @@ const Formulario = () => {
           <Form.Control
             type="text"
             placeholder="Ingrese una tarea"
-            onChange={(e) => setTarea(e.target.value.trim())}
+            onChange={(e) => setTarea(e.target.value.trimStart())}
             value={tarea}
           />
           <Button variant="primary" type="submit" className="ms-1">
